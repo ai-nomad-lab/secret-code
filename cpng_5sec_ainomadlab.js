@@ -1,5 +1,3 @@
-<!-- 쿠키 set get 시작 ▼▼ -->
-<script>
 // 쿠키 설정 함수
 function setCookie(name, value, days) {
     var expires = "";
@@ -26,11 +24,9 @@ function getCookie(name) {
     }
     return null;
 }
-</script>
-<!-- 쿠키 set get 끝 -->
+// 쿠키 set get 끝
 
-<!-- 2시간 이하면 안뜸 시작 ▼▼ -->
-<script>
+// 2시간 이하면 안뜸 시작 ▼▼
 	var lastVisitDate = getCookie("lastVisit");
 	var currentDate = new Date().getTime();;
 	var timeDifferenceInMilliseconds = currentDate - lastVisitDate;
@@ -41,11 +37,10 @@ function getCookie(name) {
 		var cpngDiv = document.getElementById("cpngDiv");
 		cpngDiv.style.display = "none"; // "none"으로 설정하여 숨김 처리
 	}
-</script>
-<!-- 2시간 이하면 안뜸 끝 -->
+//2시간 이하면 안뜸 끝
 
-<!-- 쿠파스 5초 시작 -->
-<script>
+//쿠파스 5초 시작
+
 	document.body.classList.add("cpng_cant_scroll");
 
 	var timeDifferenceInSeconds;
@@ -79,12 +74,3 @@ function getCookie(name) {
 		var cpngDiv = document.getElementById("cpngDiv");
 		cpngDiv.style.display = "none"; // "none"으로 설정하여 숨김 처리
 	}
-</script>
-<!-- 쿠파스 5초 시작 -->
-
-<style>
-  .cpng_cant_scroll {
-    height: -2000px;
-    overflow: hidden;
-  }
-</style>
