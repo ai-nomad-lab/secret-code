@@ -68,5 +68,4 @@ function getCookie(name) {
 		var cpngDiv = document.getElementById("cpngDiv");
 		cpngDiv.style.display = "none"; // "none"으로 설정하여 숨김 처리
 	}
-</script>
-<!-- 쿠파스 5초 시작 -->
+
